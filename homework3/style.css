@@ -1,0 +1,61 @@
+@import url("fonts.css");
+
+/*--avenir-font
+    --inter-font
+    --roboto-font
+    --gilroy-font
+    --sf-pro-font
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+}
+
+/* First banner */
+.first_banner{
+    width: 1440px;
+    height: 72px;
+    background: #0B2239;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.first_banner>p{
+    width: 922px;
+    font-family: var(--inter-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.first_banner>a{
+    margin-right: 20px;
+    margin-left: 42px;
+    font-family: var(--inter-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4AD295;
+}
+.first_banner>button{
+    font-family: var(--inter-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 130px;
+    height: 36px;
+    background: #4AD295;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
