@@ -19,7 +19,15 @@ body{
 .wrapper{
     width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+    gap: 20px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
 }
 
 /* First banner */
@@ -63,15 +71,12 @@ body{
     width: 130px;
     height: 36px;
     background: #4AD295;
-    border: none;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 /* Second banner */
 .second_banner{
     margin: 0 auto;
-    margin-top: 20px;
     width: 1440px;
     height: 52px;
     background: #2B2627;
@@ -97,10 +102,14 @@ body{
     margin-right: 20px;
 }
 /* Second wrapper */
+.second_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 /*Third banner*/
 .third_banner {
-    margin-top: 20px;
     width: 560px;
     height: 72px;
     background: #FFFFFF;
@@ -133,13 +142,11 @@ body{
 }
 .decline_button {
     font-family: var(--inter-font);
-    cursor: pointer;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
     color: #0D0C22;
-    border: none;
     width: 63px;
     height: 28px;
     background: rgba(13, 12, 34, 0.05);
@@ -152,11 +159,49 @@ body{
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
-    color: #FFFFFF;
-    cursor: pointer;
-    border: none;
+    color: #FFFFFF;    
     width: 52px;
     height: 28px;
     background: #EA4C89;
+    border-radius: 8px;
+}
+
+/* Fourth banner */
+
+.fourth_banner{
+    width: 560px;
+    height: 64px;
+    background: #26262B;
+    box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fourth_banner>p{
+    width: 469px;
+    font-family: var(--avenir-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.fourth_banner>p>a{
+    color: #E6842E;
+    text-decoration: none;
+}
+.fourth_banner>button{
+    font-family: var(--avenir-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #26262B;
+    width: 49px;
+    height: 28px;
+    background: #FFFFFF;
     border-radius: 8px;
 }
