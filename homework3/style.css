@@ -329,7 +329,11 @@ button{
     border-radius: 6px;
 }
 
-/* Forth wrapper */
+/* Fourth wrapper */
+.fourth_wrapper{
+    display: flex;
+    gap: 40px;
+}
 /* Seventh banner */
 .seventh_banner{
     font-family: var(--gilroy-font);
@@ -378,11 +382,16 @@ button{
 
 /* Eighth banner */
 .eighth_banner {
+    font-family: var(--sf-pro-font);
     width: 320px;
     height: 137px;
     background: #FFFFFF;
     box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
 }
 .eighth_banner>p {
     width: 288px;
@@ -392,10 +401,28 @@ button{
     font-size: 14px;
     line-height: 20px;
     color: #000000;
-}
-.eighth_banner_mini_wrapper {
+    margin-bottom: 12px;
 }
 .eighth_banner_mini_wrapper>a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #6666FF;
+    text-decoration: none;
+    margin-right: 129px;
 }
 .eighth_banner_mini_wrapper>button {
+    font-family: 'SF Pro Text';
+    width: 64px;
+    height: 33px;
+    background: #6666FF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
 }
