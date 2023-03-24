@@ -24,10 +24,24 @@ main{
     align-items: center;
 }
 .first_section_text{
-
+    color: #FFFFFF;
+}
+.first_section_text>h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    max-width: 363px;
 }
 .first_section_text>p{
     max-width: 445px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    margin-top: 54px;
+    margin-bottom: 40px;
 }
 .first_section_photos{
     position: relative;
@@ -47,4 +61,7 @@ main{
     position: absolute;
     z-index: 0;
     right: 100px;
+}
+.appstore_icon{
+    margin: 0 25px;
 }
