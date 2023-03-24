@@ -1,0 +1,50 @@
+@import url('https://fonts.cdnfonts.com/css/lato');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #b3b3b3;
+}
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* First section */
+.first_section{
+    background: #ED4C5C;
+    display: flex;
+    flex-direction: row;
+    padding: 94px 216px 95px 165px;
+    justify-content: space-between;
+    align-items: center;
+}
+.first_section_text{
+
+}
+.first_section_text>p{
+    max-width: 445px;
+}
+.first_section_photos{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.first_bc_photo {
+    position: absolute;
+    z-index: 0;
+    left: 100px;
+}
+.main_photo {
+    position: relative;
+    z-index: 1;
+}
+.second_bc_photo {
+    position: absolute;
+    z-index: 0;
+    right: 100px;
+}
