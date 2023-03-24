@@ -148,13 +148,13 @@ form{
     border-radius: 6px;
     padding-left: 31px;
 }
-#selection::placeholder{
+/* #selection::placeholder{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: rgba(19, 39, 67, 0.5);
-}
+} */
 select{
     font-style: normal;
     font-weight: 400;
