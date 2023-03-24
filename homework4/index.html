@@ -14,9 +14,9 @@
                 <h1>Stay focused on saving money</h1>
                 <p>It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
                 <div class="icons">
-                    <img src="./img/icons/playstore.svg" alt="Google PlayStore icon">
-                    <img class="appstore_icon" src="./img/icons/appstore.svg" alt="AppStore icon">
-                    <img src="./img/icons/windows.svg" alt="Windows icon">
+                    <img id="playstore" src="./img/icons/playstore.svg" alt="Google PlayStore icon">
+                    <img id="appstore" class="appstore_icon" src="./img/icons/appstore.svg" alt="AppStore icon">
+                    <img id="windows" src="./img/icons/windows.svg" alt="Windows icon">
                 </div>
             </div>
             <div class="first_section_photos">
@@ -78,5 +78,14 @@
             <img src="./img/card.png" alt="Card photo">
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $("#playstore").fadeOut(2000);
+        $("#playstore").fadeIn(1000);
+        $("#appstore").fadeOut(2500);
+        $("#appstore").fadeIn(1500);
+        $("#windows").fadeOut(3000);
+        $("#windows").fadeIn(2000);
+    </script>
 </body>
 </html>
