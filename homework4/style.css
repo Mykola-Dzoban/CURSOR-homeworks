@@ -69,7 +69,7 @@ main{
 .second_section {
     background: #FFFFFF;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     padding: 117px 165px 123px 176px;
 }
 .second_section_text>p{
@@ -99,6 +99,14 @@ form{
     border: 1px solid #333333;
     border-radius: 6px;
     height: 60px;
+    padding-left: 31px;
+}
+#name::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
 }
 #lastName{
     width: 46%;
@@ -106,6 +114,14 @@ form{
     border: 1px solid #333333;
     border-radius: 6px;
     height: 60px;
+    padding-left: 31px;
+}
+#lastName::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
 }
 #phone{
     width: 100%;
@@ -115,6 +131,14 @@ form{
     border-radius: 6px;
     margin-top: 24px;
     margin-bottom: 24px;
+    padding-left: 31px;
+}
+#phone::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
 }
 #selection{
     width: 100%;
@@ -122,6 +146,14 @@ form{
     background: none;
     border: 1px solid #333333;
     border-radius: 6px;
+    padding-left: 31px;
+}
+option{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
 }
 .submit_button{
     margin-top: 27px;
