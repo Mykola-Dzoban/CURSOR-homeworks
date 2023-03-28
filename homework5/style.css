@@ -30,8 +30,10 @@ section{
 }
 
 table{
-    border-collapse: collapse;
+    border: 2px solid #505050;
     width: 100%;
+    border-spacing: 0;
+    border-radius: 10px;
 }
 table tr th{
     text-align: left;
@@ -42,10 +44,9 @@ table tr th{
 }
 table tr{
     height: 40px;
-    border: 2px solid #505050;
-    border-radius: 20%;
 }
 td{
+    border-top: 2px solid #505050;
     padding-left: 20px;
     padding-right: 20px;
 }
