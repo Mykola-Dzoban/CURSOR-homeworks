@@ -52,6 +52,8 @@ ul li{
 /* Header */
 .header{
     margin-top: 50px;
+}
+.header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,12 +93,14 @@ ul li{
 /* Main section */
 .main_section{
     margin-top: 130px;
+    margin-bottom: 200px;
+}
+.main_section .container{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
-    margin-bottom: 200px;
 }
 .main_section img{
     position: absolute;
@@ -130,12 +134,14 @@ ul li{
 }
 /* Second section */
 .second_section {
+    margin-bottom: 150px;
+}
+.second_section .container{
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 150px;
 }
 .second_section_wrapper {
     display: flex;
@@ -157,10 +163,12 @@ ul li{
 }
 /* Feature section */
 .features {
+    margin-bottom: 174px;
+}
+.features .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 174px;
 }
 .features h2{
     font-weight: 700;
@@ -173,7 +181,7 @@ ul li{
 .features p{
     color: #4B5D68;
 }
-.features>p{
+.features .container>p{
     color: #4B5D68;
     text-align: center;
     max-width: 584px;
@@ -213,13 +221,15 @@ ul li{
 }
 /* Testimonials section */
 .testimonials {
+    margin-bottom: 150px;
+}
+.testimonials .container{
     background: #9C69E2;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 109px 79px 50px 93px;
-    margin-bottom: 150px;
 }
 .testimonials h2{
     font-family: 'Helvetica', sans-serif;
