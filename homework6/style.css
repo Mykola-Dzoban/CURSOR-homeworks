@@ -283,6 +283,7 @@ hr{
 }
 .footer{
     padding-top: 100px;
+    padding-bottom: 90px;
 }
 .footer_try {
     display: flex;
@@ -395,7 +396,6 @@ footer ul{
     margin-top: 88px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
 }
 .footer_copyright p{
     font-weight: 700;
