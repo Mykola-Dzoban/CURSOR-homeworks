@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/rochester');
 @import url('https://fonts.cdnfonts.com/css/playfair-display');
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roboto');
 
 html{
     scroll-behavior: smooth;
@@ -10,8 +11,9 @@ html{
     box-sizing: border-box;
     margin: 0;
     font-weight: 400;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
+    font-size: 18px;
 }
 .container{
     margin: 0 auto;
@@ -29,6 +31,15 @@ ul{
 }
 ul li{
     list-style: none;
+}
+svg path{
+    transition: 0.5s;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: fit-content;
 }
 
 /* Header */
@@ -71,15 +82,6 @@ svg:hover .facebook {
     gap: 24px;
     align-items: center;
 }
-svg:hover .search {
-    fill: #5186e9;
-}
-svg:hover .basket {
-    fill: #eb526c;
-}
-svg:hover .account {
-    fill: #181aaf;
-}
 .header__navigation {
     padding-top: 24px;
     padding-bottom: 18px;
@@ -91,16 +93,20 @@ svg:hover .account {
     display: flex;
     gap: 83px;
 }
+/* .header__navigation ul li{
+    transition: 0.5s;
+} */
 .header__navigation ul li a{
     font-size: 28px;
     line-height: 37px;
     position: relative;
+    font-family: 'Playfair Display', sans-serif;
+    transition: 0.3s;
 }
 .header__navigation ul li a:hover{
     color: #EDA3B5;
 }
 .header__navigation ul li:hover a::after{
-    
     content: '';
     position: absolute;
     background: #EDA3B5;
@@ -109,4 +115,64 @@ svg:hover .account {
     border-radius: 2px;
     right: 25%;
     top: 120%;
+}
+/* Main section */
+.main{
+    padding: 103px 0 118px 0; 
+    background: url(./img/hero.png) center center / cover no-repeat;
+}
+h1{
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+    max-width: 361px;
+    margin-bottom: 13px;
+}
+.main_content p{
+    max-width: 446px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+.main_content button{
+    background: #1B2437;
+    border-radius: 15px;
+    padding: 23px 78px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.main_content button:hover{
+    background: #3d4c6d;
+}
+/* Collection section*/
+.collection {
+    display: grid;
+    grid-template-areas: "item1 item1 item2 item3" "item1 item1 item4 item4" "item5 item5 item5 item5";
+}
+.main_collection {
+    grid-area: item1;
+    background: url(./img/women_collection_category.png) center center / cover no-repeat;
+}
+.main_collection h2{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.main_collection p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.women_collection {
+}
+.dresses {
+}
+.jackets {
+}
+.slider {
 }
