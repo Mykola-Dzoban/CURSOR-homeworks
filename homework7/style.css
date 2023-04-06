@@ -402,6 +402,9 @@ svg:hover .like_balloon{
     border-radius: 16px;
     padding: 11px 12px 25px 12px;
 }
+.contacts_wrapper>img{
+    cursor: pointer;
+}
 .contacts_icons {
     margin-top: 25px;
     display: flex;
@@ -423,4 +426,128 @@ svg:hover .like_balloon{
 .contact_item a{
     font-weight: 600;
     line-height: 30px;
+}
+/* Footer */
+footer{
+    background: #fff;
+    padding-top: 32px;
+}
+footer>.container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer_logo p{
+    max-width: 255px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5C5C5C;
+    }
+.footer_links {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_links h4{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    line-height: 30px;
+}
+.footer_links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_links ul li a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8E8E93;
+    transition: 0.5s;
+}
+.footer_links ul li a:hover{
+    color: #EDA3B5;
+    text-decoration: underline;
+}
+.footer_info {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_info h4{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    line-height: 30px;
+}
+.footer_info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_info ul li a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8E8E93;
+    transition: 0.5s;
+}
+.footer_info ul li a:hover{
+    color: #EDA3B5;
+    text-decoration: underline;
+}
+.footer_care {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_care h4{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    line-height: 30px;
+}
+.footer_care ul{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer_care ul li a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8E8E93;
+    transition: 0.5s;
+}
+.footer_care ul li a:hover{
+    color: #EDA3B5;
+    text-decoration: underline;
+}
+.container_wrapper {
+    background: #E5E5EA;
+    padding: 28px 0;
+}
+.container_wrapper  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_wrapper  .container p{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8E8E93;
+}
+.container_icons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
