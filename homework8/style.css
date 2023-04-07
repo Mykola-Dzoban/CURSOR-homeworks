@@ -42,10 +42,7 @@
     border-radius: 50%;
 }
 .square:hover:nth-child(8n-1){
-    background: red;
-    transform: scale(1.2);
     transform: rotate(-90deg);
-    border-radius: 50%;
 }
 .button_wrapper{
     width: 70%;
