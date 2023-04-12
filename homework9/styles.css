@@ -13,7 +13,7 @@ html{
     font-style: normal;
 }
 body{
-    /* background: #E5E5E5; */
+    background: #E5E5E5;
 }
 button{
     color: #FFFFFF;
@@ -33,6 +33,13 @@ a{
 a:hover{
     text-decoration: underline;
 }
+ul{
+    padding-inline-start: 0;
+}
+ul li{
+    list-style: none;
+}
+
 .container{
     width: 75%;
     margin: 0 auto;
@@ -121,6 +128,7 @@ a:hover{
     display: flex;
     align-items: center;
     height: 100%;
+    background: #FFFFFF;
 }
 .second_section_images {
     width: 60%;
@@ -211,4 +219,40 @@ a:hover{
     font-size: 16px;
     line-height: 21px;
     color: #00ADEE;
+}
+/* Fourth section */
+.fourth_section {
+    width: 100%;
+    height: 68vh;
+    
+}
+.fourth_section_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+    background: url(./img/background.png) center center /100% no-repeat;
+    padding: 76px 0 66px 0;
+}
+.fourth_section_container h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.features_wrapper {
+    width: 80%;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 87px; 
+    grid-row-gap: 50px;
+}
+.feature ul li{
+    color: #fff;
+}
+.feature ul li::before{
+    content: "•";
+    color: #fff;
 }
