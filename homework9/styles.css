@@ -27,6 +27,12 @@ button{
     gap: 12px;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 .container{
     width: 75%;
     margin: 0 auto;
@@ -36,8 +42,7 @@ button{
     height: 68vh;
     width: 100%;
 }
-.container {
-}
+
 .main_section_container {
     height: 100%;
     padding-left: 163px;
@@ -62,8 +67,6 @@ button{
     line-height: 29px;
     letter-spacing: -0.02em;
     color: #5282F0;
-}
-.first_section_text {
 }
 .first_section_text h1{
     font-weight: 700;
@@ -93,4 +96,62 @@ button{
 .play_store_button {
 }
 .play_store {
+}
+/* Second section */
+.second_section {
+    height: 61vh;
+    width: 100%;
+}
+.second_section_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.second_section_images {
+    width: 60%;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(./img/cristiano.png) ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.second_section_images img:nth-child(1){
+    position: relative;
+    z-index: 1;
+}
+.second_section_images img:nth-child(2){
+    position: absolute;
+    z-index: 0;
+    left: 538px;
+    bottom: -247px;
+}
+.second_section_text {
+
+    max-width: 426px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.second_section_text span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+}
+.second_section_text h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+}
+.second_section_text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+}
+.second_section_text a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
 }
