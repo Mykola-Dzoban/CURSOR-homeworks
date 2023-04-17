@@ -1,0 +1,42 @@
+.circle_wrapper {
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background: #454ABB;
+}
+.circle2 {
+    background: linear-gradient(90deg, #454ABB 47.88%, #529EC8 102.82%);
+}
+.circle3 {
+    background: linear-gradient(90deg, #529EC8 45.71%, #8FF8FF 100%);
+}
+.circle4 {
+    background: linear-gradient(90deg, #72ecf5 50.41%, #82FED9 100%);
+}
+.circle5 {
+    background: linear-gradient(90deg, #82FED9 49.48%, #53FF98 100%);
+}
+.circle6 {
+    background: linear-gradient(90deg, #53FF98 45.31%, #3FCF3C 100%);
+}
+.circle7 {
+    background: linear-gradient(90deg, #3FCF3C 21.87%, #025900 100%);
+}
+
+
+@keyframes circle1{
+    
+}

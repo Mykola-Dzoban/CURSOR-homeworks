@@ -1,0 +1,168 @@
+.jedi_wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 500px;
+    height: 500px;
+    background: url(./sky.jpg);
+    border-radius: 10px;
+}
+
+.jedi_sword1, .jedi_sword2, .jedi_sword3{
+    width: 400px;
+    height: 20px;
+    display: flex;
+    opacity: 1;
+}
+.jedi_sword2{
+    flex-direction: row-reverse;
+}
+
+.sword1_blade, .sword2_blade, .sword3_blade{
+    width: 80%;
+    height: 100%;
+    border: 1.5px solid #fff;
+}
+
+.sword_handle{
+    width: 20%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg,#5e5e61 , #797982 10%, #40404a 20%);
+    border-radius: 20px 0 0 20px;
+}
+.jedi_sword2 .sword_handle{
+    border-radius: 0 20px 20px 0;
+}
+
+.sword1_blade{
+    background: #cacaca;
+    box-shadow: 0;
+    border-radius: 0 20px 20px 0;
+    animation: sword1_blade 2s linear infinite alternate;
+}
+.sword2_blade{
+    background: #cacaca;
+    box-shadow: 0;
+    border-radius: 20px 0 0 20px ;
+    animation: sword2_blade 2s linear infinite alternate;
+}
+.sword3_blade{
+    background: #cacaca;
+    box-shadow: 0;
+    border-radius: 0 20px 20px 0;
+    animation: sword3_blade 2s linear infinite alternate;
+}
+
+.jedi_sword1{
+    animation: sword1 2s linear infinite alternate;
+}
+.jedi_sword2{
+    animation: sword2 2s linear infinite alternate;
+}
+.jedi_sword3{
+    animation: sword3 2s linear infinite alternate;
+}
+
+@keyframes sword1{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    25%{
+        opacity: 0.7;
+        transform: translateY(30px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+}
+@keyframes sword1_blade{
+    0%{
+        box-shadow: 0 0 30px 10px #26ff0000;
+        background: #cacaca;
+    }
+    25%{
+        box-shadow: 0 0 30px 10px #26ff00;
+        background: #8febac;
+    }
+    50%{
+        box-shadow: 0 0 30px 10px #26ff00;
+        background: #8febac;
+    }
+    100%{
+        box-shadow: 0 0 30px 10px #26ff00;
+        background: #8febac;
+    }
+}
+@keyframes sword2{
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    35%{
+        transform: translateY(20px) rotate(15deg);
+    }
+    65%{
+        transform: translateY(40px) rotate(30deg);
+    }
+    100%{
+        transform: translateY(50px) rotate(45deg);
+    }
+}
+@keyframes sword2_blade{
+    0%{
+        box-shadow: 0 0 30px 10px #26ff0000;
+        background: #cacaca;
+    }
+    25%{
+        background: #b1c2fc;
+    box-shadow: 0 0 30px 10px #001aff;
+    }
+    50%{
+        background: #b1c2fc;
+        box-shadow: 0 0 30px 10px #001aff;
+    }
+    100%{
+        background: #b1c2fc;
+        box-shadow: 0 0 30px 10px #001aff;
+    }
+}
+@keyframes sword3{
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    35%{
+        transform: translateY(-20px) rotate(-15deg);
+    }
+    65%{
+        transform: translateY(-40px) rotate(-30deg);
+    }
+    100%{
+        transform: translateY(-50px) rotate(-45deg);
+    }
+}
+@keyframes sword3_blade{
+    0%{
+        box-shadow: 0 0 30px 10px #26ff0000;
+        background: #cacaca;
+    }
+    25%{
+        background: #f7b7b7;
+        box-shadow: 0 0 30px 10px #ff0000;
+    }
+    50%{
+        background: #f7b7b7;
+        box-shadow: 0 0 30px 10px #ff0000;
+    }
+    100%{
+        background: #f7b7b7;
+        box-shadow: 0 0 30px 10px #ff0000;
+    }
+}
