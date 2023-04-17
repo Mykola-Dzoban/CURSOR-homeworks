@@ -12,10 +12,12 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    position: relative;
 }
 
 .circle1 {
     background: #454ABB;
+    animation: circle1 1s ease-in infinite alternate;
 }
 .circle2 {
     background: linear-gradient(90deg, #454ABB 47.88%, #529EC8 102.82%);
@@ -34,9 +36,37 @@
 }
 .circle7 {
     background: linear-gradient(90deg, #3FCF3C 21.87%, #025900 100%);
+    animation: circle7 1s ease-in 2s infinite alternate-reverse;
 }
 
 
 @keyframes circle1{
-    
+    0%{
+		transform: translate(-150px, -75px) rotate(45deg);
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes circle7{
+    0%{
+		transform: translate(150px, -75px) rotate(-45deg);
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+}
+
+
+.circle1::after, .circle2::after, .circle3::after, .circle4::after, .circle5::after, .circle6::after, .circle7::after{
+	content: '';
+	width: 80px;
+	height: 40px;
+	background: #535353;
+	display: block;
+	opacity: .4;
+	border-radius: 50%;
+	position: absolute;
+	top: 200px;
+	filter: blur(8px);
 }
