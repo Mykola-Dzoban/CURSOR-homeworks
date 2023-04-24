@@ -1,3 +1,4 @@
 {
-    "livePugCompiler.savePath": "../"
+    "livePugCompiler.savePath": "./",
+    "compile-hero.disable-compile-files-on-did-save-code": false
 }

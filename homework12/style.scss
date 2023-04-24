@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/main_photo.svg) 100% 0 no-repeat;
+}
+a{
+    text-decoration: none;
+    color: #505F98;
+}
+a:hover{
+    text-decoration: underline;
+    color: #303d72;
+    font-family: 'Roboto Medium', sans-serif;
+}
+ul{
+    padding-inline-start: 0;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+button{
+    border: 2px solid #111B47;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #111B47;
+    border-radius: 2px;
+}
+button:hover{
+    background: none;
+    border: 2px solid #091133;
+    color: #091133;
+}
+/* Header */
+.header_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_content_wrapper>ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.header_content_wrapper>ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+.header_button{
+    padding: 4px 0;
+    max-width: 160px;
+    width: 100%;
+}
+/* First section */
+.first_section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.button_wrapper{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.button_wrapper button{
+    padding: 5px 0;
+    max-width: 189px;
+    width: 100%;
+}
+.first_section_content_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.first_section_content_wrapper h1{
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+.first_section_content_wrapper p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #505F98;
+}
+/* Second section */
+.second_section{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.second_section_content_wrapper{
+    display: flex;
+}
