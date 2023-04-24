@@ -95,7 +95,6 @@ button:hover{
 }
 .first_section_content_wrapper h1{
     font-family: 'Roboto Black', sans-serif;
-    font-weight: 500;
     font-size: 3rem;
     line-height: 66px;
     letter-spacing: 1px;
@@ -110,9 +109,39 @@ button:hover{
 /* Second section */
 .second_section{
     padding-top: 100px;
+    padding-bottom: 108px;
     display: flex;
     align-items: center;
 }
 .second_section_content_wrapper{
     display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.second_section_text_wrapper h2{
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 2.5rem;
+    line-height: 48px;
+    color: #091133;
+}
+.second_section_text_wrapper>p{
+    font-size: 1rem;
+    line-height: 26px;
+    color: #6F7CB2;
+}
+.second_section_mini_information{
+    margin-top: 64px;
+    display: flex;
+    gap: 30px;
+}
+.second_section_mini_information h3{
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 1rem;
+    line-height: 26px;
+    color: #091133;
+}
+.second_section_mini_information p{
+    font-size: 0.8rem;
+    line-height: 18px;
+    color: #5D6970;
 }
