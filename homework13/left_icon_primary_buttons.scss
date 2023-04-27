@@ -1,0 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+@mixin main_properties($width: 144px, $padding: 12px){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: $padding 0;
+    max-width: $width;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: none;
+}
+@mixin button_styles($color: #FFFFFF, $background: #FFFFFF){
+    color: $color;
+    background: $background;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.big--primary--buttons__left--icon__wrapper{
+    display: flex;
+    gap: 21px;
+}
+.big--primary--button__active__left--icon{
+    @include main_properties();
+    @include button_styles(#FFFFFF, #18A0FB);
+    position: relative;
+}
+.big--primary--button__disable__left--icon{
+    @include main_properties();
+    @include button_styles(#878787, rgba(224, 224, 224, 0.3));
+}
+.big--primary--button__secondary__left--icon{
+    @include main_properties();
+    @include button_styles(#2C2C2C, #FFFFFF);
+    border: 1px solid #E0E0E0;
+}
+.big--primary--button__secondary--focused__left--icon{
+    @include main_properties();
+    @include button_styles(#18A0FB, #FFFFFF);
+    border: 1px solid #18A0FB;
+}
+
+.small--primary--buttons__left--icon__wrapper{
+    display: flex;
+    gap: 49px;
+}
+.small--primary--buttons__left--icon__wrapper img{
+    width: 20px;
+    height: 20px;
+}
+.small--primary--button__invalid__left--icon{
+    @include main_properties(116px, 8px);
+    @include button_styles(#FFFFFF, #18A0FB);
+    background: #FF3E1D;
+}
+.small--primary--button__disable__left--icon{
+    @include main_properties(116px, 8px);
+    @include button_styles(#878787, rgba(224, 224, 224, 0.3));
+}
+.small--primary--button__secondary__left--icon{
+    @include main_properties(116px, 8px);
+    @include button_styles(#2C2C2C, #FFFFFF);
+    border: 1px solid #E0E0E0;
+}
+.small--primary--button__secondary--focused__left--icon{
+    @include main_properties(116px, 8px);
+    @include button_styles(#18A0FB, #FFFFFF);
+    border: 1px solid #18A0FB;
+}

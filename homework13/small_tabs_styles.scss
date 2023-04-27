@@ -1,0 +1,80 @@
+@mixin main_properties(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 9px 0;
+    max-width: 58px;
+    width: 100%;
+    border: none;
+    background: none;
+}
+@mixin button_styles(){
+    border: 1px solid #E0E0E0;
+    color: #2C2C2C;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.small_tabs_wrapper{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.small_icon_tabs,.small_text_tabs,.small_sizes_tabs {
+    display: flex;
+}
+.small_search_tab{
+    @include main_properties();
+    max-width: 48px;
+    padding: 6px 0;
+    @include button_styles();
+}
+.small_search_tab:nth-child(1){
+    border-radius: 5px 0px 0px 5px;
+}
+.small_search_tab:nth-child(3){
+    border-radius: 0px 5px 5px 0px;
+}
+
+.small_search_tab:hover,.small_download_tab:hover,.small_archive_tab:hover{
+    background: #18A0FB;
+}
+.small_search_tab:hover svg path{
+    fill: #ffffff;
+}
+.small_download_tab:hover svg path{
+    stroke: #ffffff;
+}
+.small_archive_tab:hover svg path{
+    stroke: #ffffff;
+}
+.small_text_tab1,.small_text_tab2{
+    @include main_properties();
+    max-width: 86px;
+    @include button_styles();
+}
+.small_text_tab1:hover,.small_text_tab2:hover,.small_s_tab:hover,.small_m_tab:hover,.small_l_tab:hover{
+    background: #18A0FB;
+    color: #FFFFFF;
+}
+.small_text_tab1{
+    border-radius: 5px 0px 0px 5px;
+}
+.small_text_tab2{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.small_s_tab,.small_m_tab,.small_l_tab{
+    @include main_properties();
+    @include button_styles();
+}
+.small_s_tab{
+    border-radius: 5px 0px 0px 5px;
+}
+.small_l_tab{
+    border-radius: 0px 5px 5px 0px;
+}

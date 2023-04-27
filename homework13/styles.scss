@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+@import url(./primary_buttons_styles.css);
+@import url(./right_icon_primary_buttons.css);
+@import url(./left_icon_primary_buttons.css);
+@import url(./big_tabs_styles.css);
+@import url(./small_tabs_styles.css);
+@import url(./search_buttons_styles.css);
+@import url(./tags_buttons_styles.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.5s;
+}
+.container{
+    width: 1302px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.container:nth-child(1){
+    margin-bottom: 73px;
+}
+.big--buttons,.small--buttons{
+    display: flex;
+
+}
+.big--buttons__download{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.big--buttons__tabs{
+    width: 40%;
+}
+.small--buttons__download{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.small--buttons__download{
+    width: 50%;
+}
+.small--buttons__tabs{
+    margin-left: 146px;
+    width: 15%;
+}

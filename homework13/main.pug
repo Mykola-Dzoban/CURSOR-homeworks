@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles.css")
+        title HW #13 CURSOR
+    body 
+        .container 
+            h2 Buttons Big
+            .big--buttons
+                .big--buttons__download 
+                    include primary_big_buttons.pug
+                    include big__primary__button__download__right__icon.pug
+                    include big__primary__button__download__left__icon.pug
+                .big--buttons__tabs
+                    include big_tabs.pug
+        .container 
+            h2 Buttons small
+            .small--buttons
+                .small--buttons__download 
+                    include primary_small_buttons.pug
+                    include small__primary__button__download__right__icon.pug
+                    include small__primary__button__download__left__icon.pug
+                .small--buttons__tabs
+                    include small_tabs.pug
+                .small--buttons__search
+                    include search_button.pug
+            .tags--buttons
+                include tags_buttons.pug

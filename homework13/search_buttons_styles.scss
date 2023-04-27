@@ -1,0 +1,27 @@
+@mixin main_properties($padding: 12.17px 11.33px 11.33px 12.17px, $background: #FF3E1D){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: $padding;
+    border: none;
+    background: $background;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.search_buttons_wrapper{
+    display: flex;
+    gap: 20px;
+}
+.small_search_button{
+    @include main_properties();
+}
+
+.big_search_button{
+    @include main_properties(12px, #00D200);
+}
