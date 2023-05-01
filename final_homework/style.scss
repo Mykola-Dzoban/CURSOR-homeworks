@@ -50,9 +50,10 @@ button{
 .sections_text_wrapper {}
 .number_text_wrapper{
     @include flex(row, center, flex-start);
+    flex-wrap: nowrap
 }
 .number {
-    @include font-styles(600, 180px, 150%, rgba(255, 255, 255, 0.13));
+    @include font-styles(600, 11rem, 150%, rgba(255, 255, 255, 0.13));
 }
 .number_text {
     @include font-styles(700, 14px, 22px, #D3BA74);
@@ -98,7 +99,7 @@ button{
     -o-transform: translate(186px, -110px);
 }
 .text_wrapper h2{
-    @include font-styles(400, 70px, 70px, #FFFFFF);
+    @include font-styles(400, 4.375rem, 4.375rem, #FFFFFF);
 }
 .section_text {
     @include font-styles(300, 16px, 24px, rgba(255, 255, 255, 0.8));
@@ -131,7 +132,7 @@ main{
     gap: 40px;
 }
 .main_section_header {
-    @include font-styles(400, 100px, 100px, #ffffff)
+    @include font-styles(400, 6.25rem, 6.25rem, #ffffff)
 }
 .main_section_header_text {
     letter-spacing: 0.24em;
@@ -154,6 +155,9 @@ main{
 }
 
 /* Open the window section */
+.open_the_window_content_wrapper{
+    @include flex(row, center, space-between);
+}
 
 /* Stats section */
 .stats{
@@ -166,7 +170,7 @@ main{
     @include flex(column, center, space-between);
 }
 .stats_number {
-    @include font-styles(600, 100px, 110px, rgba(255, 255, 255, 0.13));
+    @include font-styles(600, 6.25rem, 6.875rem, rgba(255, 255, 255, 0.13));
 }
 .stats_text {
     @include font-styles(700, 14px, 22px, #D3BA74);
@@ -179,7 +183,7 @@ main{
 .explore_more_text_wrapper {
 }
 .explore_more_text_wrapper h2{
-    @include font-styles(400, 70px, 70px, #ffffff);
+    @include font-styles(400, 4.375rem, 4.375rem, #ffffff);
 }
 .explore_more_text_wrapper p{
     @include font-styles(300, 16px, 24px, rgba(255, 255, 255, 0.8));
@@ -201,4 +205,46 @@ footer{
 }
 svg{
     cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1400px){
+    .explore_the_world_content_wrapper, .dont_miss_content_wrapper, .open_the_window_content_wrapper, .explore_more_content_wrapper{
+        justify-content: center;
+    }
+    .dont_miss_content_wrapper{
+        flex-direction: column-reverse;
+    }
+    .gallery{
+        display: none;
+    }
+}
+@media (max-width: 610px){
+    .text_wrapper, .text_wrapper2, .text_wrapper3{
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+}
+}
+@media (max-width: 480px){
+    .main_section_header {
+        @include font-styles(400, 4rem, 4rem, #ffffff)
+    }
+    h2{
+        @include font-styles(400, 2.5rem, 2.5rem, #FFFFFF);
+    }
+    .number2_text::before{
+        left: -73%;
+        top: 50%;
+    }
+    .number3_text::before{
+        left: -77%;
+        top: 50%;
+    }
+    .footer_content_wrapper{
+        justify-content: center;
+        gap: 10px;
+    }
 }
