@@ -66,13 +66,23 @@ button{
     left: -64%;
     top: 50%;
 }
+.number2_text::before{
+    left: -49%;
+    top: 50%;
+}
 .text_wrapper{
-    // max-width: 564px;
     transform: translate(154px, -115px);
     -webkit-transform: translate(154px, -115px);
     -moz-transform: translate(154px, -115px);
     -ms-transform: translate(154px, -115px);
     -o-transform: translate(154px, -115px);
+}
+.text2_wrapper{
+    transform: translate(192px, -113px);
+    -webkit-transform: translate(192px, -113px);
+    -moz-transform: translate(192px, -113px);
+    -ms-transform: translate(192px, -113px);
+    -o-transform: translate(192px, -113px);
 }
 .text_wrapper h2{
     @include font-styles(400, 70px, 70px, #FFFFFF);
@@ -119,4 +129,8 @@ main{
     @include flex(row, center, space-between);
     gap: 10px;
     flex-wrap: wrap;
+}
+/* Don`t miss section */
+.dont_miss_content_wrapper{
+    @include flex(row, center, space-between);
 }
