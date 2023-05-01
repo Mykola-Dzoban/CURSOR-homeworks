@@ -19,7 +19,9 @@
     align-items: $align;
     justify-content: $justify;
 }
-
+h1,h2,h3{
+    font-family: 'Playfair Display', sans-serif;
+}
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -43,6 +45,41 @@ button{
     width: 100%;
     color: #FFFFFF;
 }
+.sections_text_wrapper {}
+.number_text_wrapper{
+    @include flex(row, center, flex-start);
+}
+.number {
+    @include font-styles(600, 180px, 150%, rgba(255, 255, 255, 0.13));
+}
+.number_text {
+    @include font-styles(700, 14px, 22px, #D3BA74);
+    position: relative;
+    margin-left: 36px;
+}
+.number_text::before{
+    position: absolute;
+    content: '';
+    width: 51px;
+    height: 2px;
+    background: #D3BA74;
+    left: -64%;
+    top: 50%;
+}
+.text_wrapper{
+    // max-width: 564px;
+    transform: translate(154px, -115px);
+    -webkit-transform: translate(154px, -115px);
+    -moz-transform: translate(154px, -115px);
+    -ms-transform: translate(154px, -115px);
+    -o-transform: translate(154px, -115px);
+}
+.text_wrapper h2{
+    @include font-styles(400, 70px, 70px, #FFFFFF);
+}
+.section_text {
+    @include font-styles(300, 16px, 24px, rgba(255, 255, 255, 0.8));
+}
 /* Header */
 .logo{
     @include font-styles();
@@ -62,7 +99,6 @@ main{
     gap: 40px;
 }
 .main_section_header {
-    font-family: 'Playfair Display', sans-serif;
     @include font-styles(400, 100px, 100px, #ffffff)
 }
 .main_section_header_text {
@@ -71,4 +107,16 @@ main{
 }
 .main_section_text {
     @include font-styles(300, 16px, 24px, rgba(255, 255, 255, 0.8))
+}
+/* Explore the world */
+.explore_the_world {}
+.explore_the_world_content_wrapper {
+    @include flex(row, center, space-between);
+    flex-wrap: wrap;
+}
+.explore_the_world_gallery{
+    width: 100%;
+    @include flex(row, center, space-between);
+    gap: 10px;
+    flex-wrap: wrap;
 }
