@@ -1,0 +1,74 @@
+// @import url('https://fonts.cdnfonts.com/css/major-mono-display');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.cdnfonts.com/css/playfair-display');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+/*  font-family: 'Major Mono Display', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+@mixin font-styles($weight: 400, $size: 32px, $height: 34px, $color: #FFFFFF){
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+@mixin flex($direction: row, $align: center, $justify: center){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/main_photo.png)  center / cover no-repeat;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding: 10px 0;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+    border-radius: 4px;
+    max-width: 99px;
+    width: 100%;
+    color: #FFFFFF;
+}
+/* Header */
+.logo{
+    @include font-styles();
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+}
+/* Main section */
+main{
+    background: linear-gradient(0deg, #0A1E27 85.81%, rgba(10, 30, 39, 0.4) 94.68%, rgba(10, 30, 39, 0) 100.15%);
+}
+.main{
+    height: 75vh;
+    @include flex();
+}
+.main_section_content_wrapper {
+    @include flex(column, flex-start, center);
+    gap: 40px;
+}
+.main_section_header {
+    font-family: 'Playfair Display', sans-serif;
+    @include font-styles(400, 100px, 100px, #ffffff)
+}
+.main_section_header_text {
+    letter-spacing: 0.24em;
+    @include font-styles(700, 20px, 22px, #D3BA74)
+}
+.main_section_text {
+    @include font-styles(300, 16px, 24px, rgba(255, 255, 255, 0.8))
+}
