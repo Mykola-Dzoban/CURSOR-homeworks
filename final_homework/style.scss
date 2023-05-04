@@ -117,7 +117,6 @@ hr{
 .logo{
     @include font-styles();
     font-family: 'Major Mono Display', monospace;
-    text-transform: uppercase;
 }
 /* Main section */
 main{
