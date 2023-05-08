@@ -44,8 +44,16 @@ button{
     border-radius: 4px;
     width: 100%;
     max-width: 120px;
-    
     color: #FFFFFF;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+button:hover{
+    background: #fff;
+    color: #0A1E27;
 }
 .sections_text_wrapper {}
 .number_text_wrapper{
@@ -208,6 +216,9 @@ svg{
 
 /* Responsive */
 @media (max-width: 1400px){
+    h2{
+        margin-bottom: 35px;
+    }
     .explore_the_world_content_wrapper, .dont_miss_content_wrapper, .open_the_window_content_wrapper, .explore_more_content_wrapper{
         justify-content: center;
     }
@@ -225,6 +236,9 @@ svg{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+}
+.last_section_photo{
+    margin-top: 25px;
 }
 }
 @media (max-width: 610px){
